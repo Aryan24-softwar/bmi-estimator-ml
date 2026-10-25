@@ -1,5 +1,5 @@
 """
-Streamlit Web App — BMI Estimator
+Streamlit Web App â€” BMI Estimator
 Author : Vishwakarma Aryan Santosh
 Project: ML Minor Project
 """
@@ -14,7 +14,7 @@ import seaborn as sns
 
 # -- Page Config ---------------------------------------------------------------
 st.set_page_config(
-    page_title="BMI Estimator — ML Project",
+    page_title="BMI Estimator â€” ML Project",
     page_icon="??",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -39,7 +39,7 @@ def load_models():
 
 @st.cache_data
 def load_data():
-    return pd.read_csv(DATA)
+    return pd.read_csv(DATA,encoding='latin-1')
 
 
 try:
@@ -128,8 +128,8 @@ with st.sidebar:
 | Range       | Category      |
 |-------------|---------------|
 | < 18.5      | ?? Underweight |
-| 18.5 – 24.9 | ?? Normal weight|
-| 25.0 – 29.9 | ?? Overweight  |
+| 18.5 â€“ 24.9 | ?? Normal weight|
+| 25.0 â€“ 29.9 | ?? Overweight  |
 | = 30.0      | ?? Obese       |
 """)
 
@@ -296,8 +296,8 @@ with tab3:
     Feature Scaling (StandardScaler)
          ?
     +------------------------------------------+
-    ¦  BMI Regressor      ¦  BMI Classifier    ¦
-    ¦  (Continuous Value) ¦  (Category Label)  ¦
+    Â¦  BMI Regressor      Â¦  BMI Classifier    Â¦
+    Â¦  (Continuous Value) Â¦  (Category Label)  Â¦
     +------------------------------------------+
          ?                        ?
     BMI Value              BMI Category
@@ -319,6 +319,6 @@ st.markdown("---")
 st.markdown("""
 <div class="footer">
     ?? BMI Estimator &nbsp;|&nbsp; ML Minor Project &nbsp;|&nbsp;
-    <strong>Vishwakarma Aryan Santosh</strong> &nbsp;|&nbsp; 2025–26
+    <strong>Vishwakarma Aryan Santosh</strong> &nbsp;|&nbsp; 2025â€“26
 </div>
 """, unsafe_allow_html=True)
